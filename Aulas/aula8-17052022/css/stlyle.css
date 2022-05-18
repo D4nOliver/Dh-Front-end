@@ -1,0 +1,19 @@
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+body{
+    background-color:  gray;
+    font-family: 'Roboto', sans-serif;
+
+}
+.banner{
+    width: 100%;
+    height: 800px;
+    background-image: url(/img/Battlefield™\ V_replay_2021.12.25-19.08.mp4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: aqua;
+}
