@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 100px;
+
+    background: #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items__nav{
+  display: flex;
+  padding: 40px;
+  list-style: none ;
+  text-decoration: none;
+  gap:20px
+  
+
+}
+
+.items{
+    color: white;
+    font-family: "Roboto";
+    list-style: none ;
+    text-decoration: none;
+
+    gap: 20px;
+}
+
+body{
+    background-color: #E5E5E5;
+    height: 100vh;
+}    
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding : 35px 5px 5px 5px;
+
+    height: 100%;
+    width: 100%;
+}
+
+
+.promocao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.motoca{
+    background-image: url(/img/delivery.jpg);
+    background-position: center;
+    border-radius: 5px;
+
+    height: 350px;
+    width: 490px;
+    
+}
+
+.titulo{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #FC200C
+}
+
+span{
+    color: white;
+}
+
+.cardapio{
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+
+    width: 491px;
+    height: 350px
+    
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px; 
+}
+
+
+
+.titulo__cardapio{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 30px;
+
+    list-style: none ;
+
+
+    color: #222222
+}
+
+.items__cardapio{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+
+    color: #222222
+}
+
+
+footer{
+    width: 100%;
+    height: 150px;
+    background: #222222;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+.items__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.footer__logo{
+    width: 212px;
+    height: 80px;
+    position: absolute;
+    right: 20px;
+    
+}
+
