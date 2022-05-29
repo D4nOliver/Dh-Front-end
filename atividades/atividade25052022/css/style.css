@@ -229,6 +229,64 @@ a{
     color: #F0A83E
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form__box{
+    width: 340px;
+    height: 40px;
+
+    background-color: #3C2313;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+}
+
+.form__txt{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 11px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;    
+}
+
+.button__limpar{
+    width: 110px;
+    height: 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #8A8787;
+    border-radius: 15px    
+}
+.button__enviar{
+    width: 110px;
+    height: 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F0A83E;
+    border-radius: 15px 
+    
+    
+}
+
 footer{
     position: absolute;
     display: flex;
