@@ -11,6 +11,9 @@
     --primary-color:  #00669F;
 }
 
+html{
+    font-size: 16px;
+}
 
 header{
     position: sticky;
@@ -37,30 +40,37 @@ header{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1,25rem;
     padding: 25px;
     
 
 }
 
-
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .container-cards{
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 30px;
     gap:15px
 }
 
 .card{
-    width: 374px;
+    width: 437px;
     height: 597px;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 16px;
+    margin: 20px;
+
     background-color:var(--card-background);
     display: flex;
-    flex-direction:column ;   
+    flex-direction:column;   
 
     position: relative;
 }
@@ -70,23 +80,9 @@ header{
     height: 220px;
     position: relative;
     border-radius: 16px 16px 0px 0px;
-}
 
-.background-batman{
-    background-image: url(/img/bat-background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-   
-}
-
-.background-harley{
-    background-image: url(/img/explosao-de-cores.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
- 
+    
+} 
 
 .card__icon{
     position: absolute;
@@ -95,15 +91,12 @@ header{
 }
 
 .card__user{
+    width: 136px;
+    height: 136px;
     position: absolute;
     top:50px;
-    left: 120px; 
-}
-
-.card__user img{
+    left: 150px; 
     border-radius: 50%;
-    
-    
 }
 
 .card__content{
@@ -122,7 +115,7 @@ header{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 19px;
     text-align: center;
 
@@ -156,10 +149,45 @@ footer{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 19px;
 
     text-align: center;
 
     color: #FFF9F9;
+}
+
+
+@media (max-width: 468px){
+
+    body{
+        background-color: #00669F;
+    }
+
+    .container-cards{
+        width: 100%;
+        
+    }
+}
+
+@media(max-width: 1016px){
+    body{
+        background-color: #b81919;
+
+    }
+    .container-cards{
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 1302px){
+    body{
+        background-color: #1CD1B0;
+
+    }
+    .container-cards{
+        width: 100%;
+        
+    }
 }
