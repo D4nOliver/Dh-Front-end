@@ -170,16 +170,6 @@ footer{
     }
 }
 
-@media(max-width: 1016px){
-    body{
-        background-color: #b81919;
-
-    }
-    .container-cards{
-        width: 100%;
-        
-    }
-}
 
 @media (max-width: 1302px){
     body{
