@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/form.css" />
+
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <div class="bar-descount">
+            <span>Descontos de 20%</span>
+        </div>
+
+        <div class="titulo">
+            <img src="/img/logo.png" alt=""> 
+            <h1>Nome da Loja</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/contato.html">Contato</a></li>
+                <li><a href="/registro.html">Cadastro</a></li>
+                <li><a href="/login.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="" method="post">
+
+            <legend>Login</legend>
+            
+            <div>
+                <label for="usuario"></label>
+                <input type="text" name="usuario" id="usuario" placeholder="Usuário" required>
+            </div>
+
+            <div>
+                <label for="senha"></label>
+                <input type="password" name="senha" id="senha" placeholder="senha" required>
+            </div>    
+                   
+            <input type="submit" value="Entrar">
+        </form>
+
+        <span>Não possui uma conta?<a href="/registro.html">Registre-se</a></span>
+
+    </main>
+
+    <footer>
+        <p id="directs">Todos os direitos reservados a Front-end I</p>
+    </footer>
+</body>
+
+</html>

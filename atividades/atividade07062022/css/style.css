@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+
+    --light-color: #E5E5E5;
+    --dark-color: #000000;
+    --primary-color:  #00669F;
+    --buttons-color: #1CD1B0;
+}
+
+html{
+    font-size: 16px;
+}
+
+header{
+    width: 100vw;
+
+}
+
+.bar-descount{
+    width: 100%;
+    height: 38px;
+    background-color: var(--buttons-color);
+    padding: 10px;
+
+}
+
+.titulo{
+    width: 100%;
+    height: 101px;
+    background-color: var(--primary-color);
+   
+    display: flex;
+    gap: 30px;
+}
+
+.titulo h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    padding: 25px;
+    color: var(--light-color);
+}
+
+nav{
+    background-color: var(--dark-color);
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    
+}
+
+nav ul a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    background-color: var(--primary-color);
+    border-radius: 32px;
+
+}
+.cadastro{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+span{
+    font-size: 0.8rem;
+}
+
+h2, span{
+    color: var(--light-color);
+}
+.form__col1 label, .form__col2 h4{
+    font-weight: 700;
+    font-size: 1.25rem;
+     
+    color: var(--light-color);
+}
+
+.form__info{
+
+    width:90vw;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+    
+}
+
+.form__col1, .form__col2{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    gap: 20px;
+}
+
+.form__col1 label{
+    color: var(--light-color);
+}
+
+.form__col1 label::before{
+    content: "*";
+    color: var(--light-color);
+}
+
+.form__col1 div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+
+input, select{
+    height: 63px;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+textarea{
+    border: none;
+    border-radius: 10px;  
+}
+
+.form__col2 select{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.seletores{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Categorias div{
+    display: flex;
+   ;
+    align-items: center;
+    gap: 20px;
+}
+
+.Categorias label{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--light-color);
+}
+
+input[type="submit"]{
+    width: 80vw;
+    background-color:var(--buttons-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 23px;
+    margin: 10px;
+    cursor: pointer;
+
+    font-size: 1.8rem;
+    
+}
+
+input[type="submit"]:hover{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+input[type="checkbox"]{
+    height: 30px;
+}
+
+input[type="radios"]
+{
+    height: 30px;
+}
+footer{
+    width: 100%;
+    height: 51px;
+    background-color: var(--primary-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+}
+
+#directs {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+
+    text-align: center;
+
+    color: #FFF9F9;
+}
+
+@media (min-width: 729px){
+    .form__info{
+        flex-direction: row;
+    }
+    
+    .form__col1, .form__col2{
+        width: 40%;
+    }
+
+    .select{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    span{
+        font-size: 1rem;
+    }
+    
+}

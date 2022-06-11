@@ -7,8 +7,10 @@
     padding: 0;
     font-family: "Roboto";
 
-    --card-background: #E5E5E5;
+    --light-color: #E5E5E5;
+    --dark-color: #000000;
     --primary-color:  #00669F;
+    --buttons-color: #1CD1B0;
 }
 
 html{
@@ -26,7 +28,7 @@ header{
 .bar-descount{
     width: 100%;
     height: 38px;
-    background: #1CD1B0;
+    background-color:var(--buttons-color);
     padding: 10px;
 
 }
@@ -35,15 +37,31 @@ header{
     width: 100%;
     height: 101px;
     background-color: var(--primary-color);
-    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
 
-    font-family: 'Roboto';
-    font-style: normal;
+.titulo h1{
     font-weight: 400;
     font-size: 1,25rem;
     padding: 25px;
-    
+    color: var(--light-color);
+ }
 
+nav{
+    background-color: var(--dark-color);
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    
+}
+
+nav ul a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 1.5rem;
 }
 
 main{
@@ -53,7 +71,7 @@ main{
 }
 
 .container-cards{
-    width: 60%;
+    width: 70vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +86,7 @@ main{
     border-radius: 16px;
     margin: 20px;
 
-    background-color:var(--card-background);
+    background-color:var(--light-color);
     display: flex;
     flex-direction:column;   
 
@@ -125,7 +143,7 @@ main{
     margin: 20px;
     width: 145.34px;
     height: 54.76px;
-    background-color: var(--primary-color);
+    background-color: var(--buttons-color);
 
     display: flex;
     justify-content: center;
@@ -133,6 +151,17 @@ main{
 
     text-decoration: none;
     color: white;
+    border-radius: 10px;
+}
+
+.card__button:hover{
+    background-color: var(--primary-color);
+}
+
+.add{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
 
 footer{
@@ -158,26 +187,11 @@ footer{
 }
 
 
-@media (max-width: 468px){
-
-    body{
-        background-color: #00669F;
-    }
-
+@media (max-width: 590px){
     .container-cards{
-        width: 100%;
+        width: 100vw;
         
     }
 }
 
 
-@media (max-width: 1302px){
-    body{
-        background-color: #1CD1B0;
-
-    }
-    .container-cards{
-        width: 100%;
-        
-    }
-}
