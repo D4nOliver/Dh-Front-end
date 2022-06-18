@@ -116,7 +116,7 @@ input:focus{
     border: solid yellow;
 }
 
-input:invalid:not(:focus):not(:placeholder-shown){
+input:invalid{
     border: solid red;
 }
 
