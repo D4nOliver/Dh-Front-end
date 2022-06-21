@@ -31,6 +31,8 @@ header{
 }
 
 #menu nav ul{
+    list-style: none;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +46,7 @@ header{
 }
 
 #menu nav ul a:hover{
-    transition: 1s;
+    transition: 0.5s;
 
     color: var(--button-color);
 }
@@ -148,6 +150,11 @@ main section h2{
     transform: scale(1.1);
 }
 
+hr{
+    width: 100%;
+    border: solid rgba(184, 184, 184, 0.397) 1px;
+}
+
 .card div{
     display: flex;
     flex-direction: column;
@@ -198,12 +205,14 @@ main section h2{
 #chairs{
     background-image: url(/img/banner\ 1-1.png);
     background-size: cover;
+    background-position: center;
     border-radius: 5px;
 }
 
 #pc{
     background-image: url(/img/banner\ 1.png);
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     border-radius: 5px;
 }
 
@@ -223,7 +232,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
+    padding: 20px;
     
 }
 
@@ -258,6 +267,7 @@ footer{
 }
 
 #direitos{
+    padding: 5px;
     text-align: center;
     width: 100%;
     background-color: #C4C4C4;
@@ -291,6 +301,7 @@ footer{
     }
 
     .portifolio{
+        padding: 50px;
         flex-direction: row;
         justify-content: space-between;
         
